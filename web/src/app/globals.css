@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFF7EB;
+  --foreground: #445166;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bg: #FFF7EB;
+  --color-surface: #FFFFFF;
+  --color-brand-50: #EEF2FF;
+  --color-brand-100: #DCE4FF;
+  --color-brand-200: #BFCBFF;
+  --color-brand-300: #9EAEFF;
+  --color-brand-400: #7F94FF;
+  --color-brand-500: #6B80FF;
+  --color-accent-50: #FFF1E9;
+  --color-accent-100: #FFE2D3;
+  --color-accent-200: #FFC4A6;
+  --color-accent-300: #FFAA80;
+  --color-accent-400: #FF996B;
+  --color-accent-500: #FF8A5B;
+  --color-muted: #7D8EA2;
+  --color-text: #445166;
+  --shadow-soft: 0 8px 28px rgba(68, 81, 102, 0.08);
+  --shadow-elevated: 0 12px 40px rgba(68, 81, 102, 0.12);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Darkモードは現時点では未対応（ライト固定） */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}

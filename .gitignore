@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# Trae
+.trae/*
+!.trae/skills/**
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Node/Next.js (monorepo: web/)
+web/node_modules
+web/.next
+web/out
+web/build
+web/.env*
+web/*.tsbuildinfo
+
+# Prisma generated
+web/src/generated/prisma
+
+# Vercel
+web/.vercel
